@@ -16,6 +16,12 @@ body {
 	font-weight: 300;
 	text-shadow: none;
 }
+.logo_pyladies{
+	height: 32px;
+	width: 32px;
+	margin-right: 5px;
+	margin-bottom: 12px;
+}
 
 .clear {
 	clear: both;
