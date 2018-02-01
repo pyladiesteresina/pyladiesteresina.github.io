@@ -94,6 +94,35 @@ a:hover {
 	text-transform: uppercase;
 }
 
+.box{
+	border: 1px solid #cccccc;
+	padding: 20px;
+	height: 300px;
+	margin-left: 60px;
+	top: 10px;
+	width: 29%;
+}
+.box:hover{
+	-webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+.box-left{
+	border: 1px solid #cccccc;
+	padding: 20px;
+	height: 300px;
+	margin-left: 30px;
+	top: 10px;
+	width: 29%;
+}
+.box-left:hover{
+	-webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+.width-about{
+	width: auto;
+}
 /*==========================================================================
   Misc & Adjust
  ========================================================================== */
@@ -322,7 +351,7 @@ a:hover {
 
 section.section {
 	margin:0;
-	padding: 80px 0 0px 0;
+	padding: 50px 0 30px 0;
 }
 
 .bg-white {
