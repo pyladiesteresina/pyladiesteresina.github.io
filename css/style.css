@@ -61,6 +61,8 @@ blockquote.bigquote {
 
 .text-bold {
 	font-weight: 900;
+	margin-top: 20px;
+	color: #868686;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
