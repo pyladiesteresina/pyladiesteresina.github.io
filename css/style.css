@@ -1,5 +1,6 @@
 /* ==== Google font ==== */
 @import url('https://fonts.googleapis.com/css?family=Lato:400,300,700,900');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 /* === fontawesome === */
 @import url('font-awesome.css');
 /* ==== overwrite bootstrap standard ==== */
@@ -22,7 +23,43 @@ body {
 	margin-right: 5px;
 	margin-bottom: 12px;
 }
+.header p{
+	font-family:'Dancing Script';
+}
 
+.box{
+	border: 1px solid #cccccc;
+	padding: 20px;
+	height: 300px;
+	margin-left: 60px;
+	top: 10px;
+	width: 29%;
+}
+.box:hover{
+	-webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+.box-left{
+	border: 1px solid #cccccc;
+	padding: 20px;
+	height: 300px;
+	margin-left: 30px;
+	top: 10px;
+	width: 29%;
+}
+.box-left:hover{
+	-webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+.width-about{
+	width: auto;
+}
+.phrase-center{
+	margin-bottom: 80px;
+	background-color: white;
+}
 .clear {
 	clear: both;
 }
@@ -94,36 +131,6 @@ a:hover {
 
 .t-uppercase {
 	text-transform: uppercase;
-}
-
-.box{
-	border: 1px solid #cccccc;
-	padding: 20px;
-	height: 300px;
-	margin-left: 60px;
-	top: 10px;
-	width: 29%;
-}
-.box:hover{
-	-webkit-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    transform: scale(1.02);
-}
-.box-left{
-	border: 1px solid #cccccc;
-	padding: 20px;
-	height: 300px;
-	margin-left: 30px;
-	top: 10px;
-	width: 29%;
-}
-.box-left:hover{
-	-webkit-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    transform: scale(1.02);
-}
-.width-about{
-	width: auto;
 }
 /*==========================================================================
   Misc & Adjust
@@ -465,6 +472,7 @@ section.featured img{
 
 section.featured p{
 	font-size: 23px;
+	font-family:'Dancing Script';
 }
 
 section.featured {
@@ -477,6 +485,7 @@ section.featured h2.slogan {
 	color: #000;
 	font-size: 48px;
 	font-weight: 900;
+	margin-top: 10px;
 }
 
  /* inner heading */
@@ -781,17 +790,27 @@ nav#filter a {
 	color: #000;
 	font-weight: 700;
 }
-
+.testimonial{
+	border: 1px solid transparent;
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(255,203,0,0.9);
+}
 .testimonial h5 {
-	color: #000;
-	background-color: #F7F7F7;
+	font-family:'Dancing Script';
+	font-weight: bold;
+	background-color: transparent;
+	color: white;
+	margin: 0;
 	font-size: 23px;
-	font-family: Georgia, sans-serif;
-	line-height: 1.5em;
+	line-height: 0.5em;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
-.testimonal a {
-	color: #f1c40f;
+.testimonial a{
+	color: white;
 }
 
 
