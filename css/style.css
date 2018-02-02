@@ -57,7 +57,8 @@ body {
 	width: auto;
 }
 .phrase-center{
-	margin-bottom: 80px;
+	padding-top: 60px;
+	padding-bottom: 120px;
 	background-color: white;
 }
 .clear {
@@ -494,6 +495,7 @@ section.featured.inner {
 	padding: 150px 0 50px;
 }
 
+
 /*===========================
 	 --- Service ----
 =========================== */
@@ -779,17 +781,11 @@ nav#filter a {
 =========================== */
 #testimonals {
 	padding-top: 20px;
-	padding-bottom:40px;
+	padding-bottom:70px;
 	position:relative;
 	margin-top:50px;
 }
-.testimonial i {
-	color: #a48835;
-}
-.testimonial span.author {
-	color: #000;
-	font-weight: 700;
-}
+
 .testimonial{
 	border: 1px solid transparent;
 	width: 650px;
@@ -804,15 +800,38 @@ nav#filter a {
 	color: white;
 	margin: 0;
 	font-size: 23px;
-	line-height: 0.5em;
 	padding-left: 10px;
 	padding-right: 10px;
 }
 
-.testimonial a{
+.testimonial p{
 	color: white;
 }
-
+.write-first{
+    top: 50%;  
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    text-align: center;
+    white-space: nowrap;
+    line-height: 30px;
+    overflow: hidden;
+    padding: 0 5px;
+}
+/* Animation */
+.typewriter{
+	animation: typewriter 5s steps(44) 1s 1 normal both,
+             cursor 500ms steps(44) infinite alternate;
+}
+	@keyframes typewriter{
+	  from{width: 0;}
+	  to{width: 475px;}
+	}
+	@keyframes cursor{
+	  from{border-right-color: 	rgb(54, 56, 56);}
+	  to{border-right-color: transparent;}
+	}
 
 /*===========================
   --- Contact ----
