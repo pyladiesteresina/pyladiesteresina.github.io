@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap-theme.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/all-animation.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/functions.js"></script>
 
 </head>
 
@@ -42,19 +45,22 @@
     </div>
   </div>
 
-  <section class="featured">
-    <div class="container">
-      <div class="row mar-bot40">
-        <div class="col-md-6 col-md-offset-3">
+  <section class="featured header">
+    <br>
+    
+      <div class="container">
+        <div class="row mar-bot40">
+          <div class="col-md-6 col-md-offset-3">
 
-          <div class="align-center">
-            <img src="img\logo.png">
-            <h2 class="slogan">PyLadies Teresina</h2>
-            <p>
-              Apoiando e empoderando mulheres na tecnologia no Piauí
-
-            </p>
+            <div class="align-center header-phrase">
+              <img src="img\logo.png">
+              <h2 class="slogan">PyLadies Teresina</h2>
+              <p class="write-first typewriter">
+                Apoiando e empoderando mulheres na tecnologia do Piauí
+              </p>
+            </div>
           </div>
+          <div class="skew">
         </div>
       </div>
     </div>
@@ -79,6 +85,9 @@
             <a href=""><i class="fa fa-calendar fa-4x" aria-hidden="true"></i></a>
             <h4 class="text-bold">Agenda</h4>
             <p>Acompanhe as atividades do grupo e se organize para participar dos próximos encontros.<br>Vamos?!
+              <br>
+              <a href="https://www.facebook.com/PyLadiesTeresina/" style="font-weight: bold;">Ver mais &nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+              <br>
             </p>
           </div>
         </div>
@@ -86,8 +95,11 @@
         <div class="col-lg-4 box-left" >
           <div class="align-center">
             <a href=""><i class="fa fa-pencil-square-o fa-4x" aria-hidden="true"></i></a>
-            <h4 class="text-bold">Blog</h4>
+            <h4 class="text-bold">Nosso Blog</h4>
             <p>Está animada para aprender mais sobre mulheres e tecnologia? Adoramos compartilhar conhecimento por aqui. "Bora curiar"?!
+              <br>
+              <a href="https://medium.com/pyladies-teresina" style="font-weight: bold;">Ver mais &nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+              <br>
             </p>
           </div>
         </div>
@@ -99,15 +111,14 @@
   <!-- / about -->
 
   <!-- spacer section:testimonial -->
-  <section id="testimonials" class="section" data-stellar-background-ratio="0.5">
+  <section id="testimonials" class="phrase-center" data-stellar-background-ratio="0.5">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="align-center">
-            <div class="testimonial pad-top40 pad-bot40 clearfix">
-              <h5>"A tecnologia muda o mundo e as mulheres transformam a tecnologia."</h5>
-              <br/>
-              <a href="http://anitaborg.org/">{ Instituto Anita Borg }</a>
+            <div class="testimonial pad-top20 clearfix">
+              <h5><p>A tecnologia muda o mundo e as mulheres transformam a tecnologia.</p></h5>
+              <p>{ Instituto Anita Borg }</p>
             </div>
           </div>
         </div>
@@ -116,17 +127,17 @@
   </section>
 
   <!-- organization -->
-  <section id="section-organization" class="section appear clearfix">
+  <section id="section-organization" class="section appear clearfix bg-alternate">
     <div class="container">
       <div class="row mar-bot40">
         <div class="col-md-offset-3 col-md-6">
           <div class="section-header">
-            <h2 class="section-heading animated" data-animation="bounceInUp">Quem organiza?</h2>
+            <h2 class="section-heading animated" data-animation="bounceInUp">Quem <span class="title_org">organiza?</span></h2>
           </div>
         </div>
       </div>
       <div class="row align-center">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="team-member">
             <figure class="member-photo"><img src="img/team/member1.jpg" alt="" /></figure>
             <div class="team-detail">
@@ -135,7 +146,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="team-member">
             <figure class="member-photo"><img src="img/team/member2.jpg" alt="" /></figure>
             <div class="team-detail">
@@ -144,7 +155,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="team-member">
             <figure class="member-photo"><img src="img/team/member3.jpg" alt="" /></figure>
             <div class="team-detail">
@@ -153,9 +164,18 @@
             </div>
           </div>
         </div>
+        <div class="col-md-3">
+          <div class="team-member">
+            <figure class="member-photo"><img src="img/team/member7.jpg" alt="" /></figure>
+            <div class="team-detail">
+              <h4>Malena Caroline</h4>
+              <span>Graduanda de Ciência da Computação - UFPI. Web Developer. Apaixonada pela vida e pela arte de programar.</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row align-center">
-        <div class="col-md-4">
+      <div class="row align-center mar-top40">
+        <div class="col-md-3">
           <div class="team-member">
             <figure class="member-photo"><img src="img/team/member4.jpg" alt="" /></figure>
             <div class="team-detail">
@@ -164,7 +184,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="team-member">
             <figure class="member-photo"><img src="img/team/member5.jpg" alt="" /></figure>
             <div class="team-detail">
@@ -173,12 +193,21 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="team-member">
             <figure class="member-photo"><img src="img/team/member6.jpg" alt="" /></figure>
             <div class="team-detail">
               <h4>Sarah Vasconcelos</h4>
               <span>Graduada em Psicologia. Amante de tecnologia e da comunidade Python!</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="team-member">
+            <figure class="member-photo"><img src="img/team/member8.jpg" alt="" /></figure>
+            <div class="team-detail">
+              <h4>Bruna Soares</h4>
+              <span style="text-align: justify;">Cantora por destino, contadora por formação, entusiasta de empreendedorismo e tecnologia por inspiração.</span>
             </div>
           </div>
         </div>

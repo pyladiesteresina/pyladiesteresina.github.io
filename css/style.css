@@ -1,5 +1,6 @@
 /* ==== Google font ==== */
 @import url('https://fonts.googleapis.com/css?family=Lato:400,300,700,900');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 /* === fontawesome === */
 @import url('font-awesome.css');
 /* ==== overwrite bootstrap standard ==== */
@@ -10,11 +11,13 @@
   ========================================================================== */
 body {
 	color:#000;
-	background: #f7f7f7;
 	font-size: 18px;
 	line-height: 1.6em;
 	font-weight: 300;
 	text-shadow: none;
+}
+.bg-alternate{
+	background: rgba(232, 232, 232, 0.5);
 }
 .logo_pyladies{
 	height: 32px;
@@ -22,7 +25,68 @@ body {
 	margin-right: 5px;
 	margin-bottom: 12px;
 }
-
+.header-phrase p{
+	font-family:'Dancing Script';
+}
+.header{
+	z-index: 1;
+  	position: relative;
+}
+/*.skew{
+	margin-top: 40px;
+}*/
+.header .skew:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -35px;
+  overflow: visible;
+  width: 100%;
+  height: 85px;
+  background: white;
+  z-index: -1;
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  -o-transform: skewY(-3deg);
+  transform: skewY(-3deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+}
+.box{
+	border: 1px solid #cccccc;
+	padding: 20px;
+	height: 300px;
+	margin-left: 60px;
+	top: 10px;
+	width: 29%;
+}
+.box:hover{
+	-webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+.box-left{
+	border: 1px solid #cccccc;
+	padding: 20px;
+	height: 300px;
+	margin-left: 30px;
+	top: 10px;
+	width: 29%;
+}
+.box-left:hover{
+	-webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+.width-about{
+	width: auto;
+}
+.phrase-center{
+	padding-top: 60px;
+	padding-bottom: 120px;
+	background-color: white;
+}
 .clear {
 	clear: both;
 }
@@ -61,6 +125,8 @@ blockquote.bigquote {
 
 .text-bold {
 	font-weight: 900;
+	margin-top: 20px;
+	color: #868686;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
@@ -92,36 +158,6 @@ a:hover {
 
 .t-uppercase {
 	text-transform: uppercase;
-}
-
-.box{
-	border: 1px solid #cccccc;
-	padding: 20px;
-	height: 300px;
-	margin-left: 60px;
-	top: 10px;
-	width: 29%;
-}
-.box:hover{
-	-webkit-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    transform: scale(1.02);
-}
-.box-left{
-	border: 1px solid #cccccc;
-	padding: 20px;
-	height: 300px;
-	margin-left: 30px;
-	top: 10px;
-	width: 29%;
-}
-.box-left:hover{
-	-webkit-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    transform: scale(1.02);
-}
-.width-about{
-	width: auto;
 }
 /*==========================================================================
   Misc & Adjust
@@ -366,6 +402,9 @@ section.section {
 	text-transform: uppercase;
 	font-weight: 700;
 }
+.title_org, .team-detail h4{
+	color: #f1c40f;
+}
 
 /*===========================
   --- Header & menu ----
@@ -456,13 +495,17 @@ h1 a.navbar-brand {
 /*===========================
   --- Featured section ----
 =========================== */
-
+.featured .container{
+	margin-top: -10px;
+}
 section.featured img{
 	width: 250px;
 }
 
 section.featured p{
 	font-size: 23px;
+	font-family:'Dancing Script';
+	margin-bottom: 45px;
 }
 
 section.featured {
@@ -475,12 +518,20 @@ section.featured h2.slogan {
 	color: #000;
 	font-size: 48px;
 	font-weight: 900;
+	margin-top: 10px;
 }
 
  /* inner heading */
 section.featured.inner {
 	background: #eee;
 	padding: 150px 0 50px;
+}
+
+/*===========================
+  --- About section ----
+=========================== */
+#section-about{
+	margin-top: 10px;
 }
 
 /*===========================
@@ -768,30 +819,57 @@ nav#filter a {
 =========================== */
 #testimonals {
 	padding-top: 20px;
-	padding-bottom:40px;
+	padding-bottom:70px;
 	position:relative;
 	margin-top:50px;
 }
-.testimonial i {
-	color: #a48835;
-}
-.testimonial span.author {
-	color: #000;
-	font-weight: 700;
-}
 
+.testimonial{
+	border: 1px solid transparent;
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(255,203,0,0.9);
+}
 .testimonial h5 {
-	color: #000;
-	background-color: #F7F7F7;
+	font-family:'Dancing Script';
+	font-weight: bold;
+	background-color: transparent;
+	color: white;
+	margin: 0;
 	font-size: 23px;
-	font-family: Georgia, sans-serif;
-	line-height: 1.5em;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
-.testimonal a {
-	color: #f1c40f;
+.testimonial p{
+	color: white;
 }
-
+.write-first{
+    top: 50%;  
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    text-align: center;
+    white-space: nowrap;
+    line-height: 30px;
+    overflow: hidden;
+    padding: 0 5px;
+}
+/* Animation */
+.typewriter{
+	animation: typewriter 5s steps(44) 1s 1 normal both,
+             cursor 500ms steps(44) infinite alternate;
+}
+	@keyframes typewriter{
+	  from{width: 0;}
+	  to{width: 475px;}
+	}
+	@keyframes cursor{
+	  from{border-right-color: 	rgb(54, 56, 56);}
+	  to{border-right-color: transparent;}
+	}
 
 /*===========================
   --- Contact ----
