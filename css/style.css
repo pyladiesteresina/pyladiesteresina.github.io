@@ -17,7 +17,7 @@ body {
 	text-shadow: none;
 }
 .bg-alternate{
-	background: #f7f7f7;
+	background: rgba(232, 232, 232, 0.5);
 }
 .logo_pyladies{
 	height: 32px;
@@ -401,6 +401,9 @@ section.section {
 .section-header h2.section-heading {
 	text-transform: uppercase;
 	font-weight: 700;
+}
+.title_org, .team-detail h4{
+	color: #f1c40f;
 }
 
 /*===========================
